@@ -1,0 +1,3 @@
+sudo turnserver -a -o -v --no-dtls --no-tls -u 29460d3bda93553a9422422d8a4bd8bf8973590a:d98c8bd5b8ce915be88f244552b52cd5967654f2 -r "toffeeshare.com"
+29460d3bda93553a9422422d8a4bd8bf8973590a Credentials.js:8
+d98c8bd5b8ce915be88f244552b52cd5967654f22346	402.383962331	163.172.116.145	192.168.178.89	STUN	162	Allocate Error Response error-code: 401 (Unauthorized) Unauthorized with nonce realm: toffeeshare.com

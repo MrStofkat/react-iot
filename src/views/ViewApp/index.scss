@@ -1,0 +1,18 @@
+.container-app {
+  max-width: 400px;
+  padding: 20px;
+  .header-top {
+    max-width: 100%;
+  }
+  .container-buttons {
+    padding-top: 30px;
+  }
+
+  .button-download {
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 100px;
+  }
+}
+
