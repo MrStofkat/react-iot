@@ -1,0 +1,20 @@
+.modal-popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999; }
+  .modal-popup .container-popup {
+    max-width: 80%;
+    width: 32rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    min-height: 50px;
+    display: flex;
+    justify-content: center; }

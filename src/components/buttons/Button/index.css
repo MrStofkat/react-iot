@@ -1,0 +1,13 @@
+.button-default {
+  min-width: 100px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #355577; }
+  .button-default .icon {
+    width: 2rem;
+    height: 2rem; }

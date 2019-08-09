@@ -1,6 +1,6 @@
 {
-  "short_name": "ToffeeShare",
-  "name": "ToffeeShare File transfer",
+  "short_name": "React Boilerplate",
+  "name": "React Boilerplate",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#009aff",
-  "background_color": "#2ec9ff"
+  "theme_color": "#333",
+  "background_color": "#333"
 }

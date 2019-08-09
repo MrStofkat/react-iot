@@ -4,10 +4,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import Notifications from './components/Notifications';
 import Header from './components/Header';
-import ViewInfo from './views/ViewInfo';
-import ViewDownload from './views/ViewDownload';
-import ViewNews from './views/ViewNews';
-import ViewPrivacy from './views/ViewPrivacy';
+import PageMain from './pages/PageMain';
+import PagePrivacy from './pages/PagePrivacy';
 
 class App extends Component {
   constructor(props) {
@@ -16,15 +14,13 @@ class App extends Component {
 
   render() {
     return (
-      <div >
+      <div className="outer-wrapper">
         <Router>
-          <div>
+          <div className="app-container">
             <Header/>
             <div className="App">
-              <Route exact path="/" component={ViewInfo} />
-              <Route exact path="/download" component={ViewDownload} />
-              <Route exact path="/news" component={ViewNews} />
-              <Route exact path="/privacy" component={ViewPrivacy}/>
+              <Route exact path="/" component={PageMain} />
+              <Route exact path="/privacy" component={PagePrivacy}/>
             </div>
           </div>
         </Router>

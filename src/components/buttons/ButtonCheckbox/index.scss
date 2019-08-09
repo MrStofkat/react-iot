@@ -1,0 +1,63 @@
+/* Customize the label (the container) */
+.button-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  /* Create the checkmark/indicator (hidden when not checked) */
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+
+    &:after {
+      display: none;
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+      content: "";
+      position: absolute;
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  input:checked ~ .checkmark {
+    background-color:#d2691e
+    ;
+  }
+  
+
+  /* Show the checkmark when checked */
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+}
+

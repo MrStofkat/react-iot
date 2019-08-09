@@ -1,0 +1,33 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  .container-add-device {
+    display: flex;
+    padding: 1rem;
+
+    .input-device-name {
+      font-size: 1.5rem;
+      font-weight: 300;
+      height: 2.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      flex: 1;
+      border-radius: 5px;
+    }
+  }
+  .container-devices {
+    border-top: solid 1px white;
+  }
+  .container-header {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    .container-header-buttons {
+      display: flex;
+      margin-right: -0.5rem;
+    }
+  }
+}

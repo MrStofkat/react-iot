@@ -1,84 +1,99 @@
-.App-header {
+.header {
+  margin: auto;
+  position: fixed;
   height: 55px;
-  width: calc(100% - 20px);
+  left: 0;
+  right: 0;
   color: white;
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 1rem;
   justify-content: space-between;
   z-index: 999;
-}
+  background: rgba(0, 0, 0, 0.15);
+  /* Position and sizing of burger button */
+  /* Color/shape of burger icon bars */
+  /* Position and sizing of clickable cross button */
+  /* Color/shape of close button cross */
+  /* General sidebar styles */
+  /* Morph shape necessary with bubble or elastic */
+  /* Wrapper for item list */
+  /* Individual item */
+  /* Styling of overlay */ }
+  .header h1 {
+    padding-left: 15px;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    font-weight: 300; }
+  .header .container-menu-items-desktop {
+    margin-right: 20px; }
+  .header a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-size 0.5s; }
+  .header .menu-item-desktop {
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-size 0.5s;
+    height: 55px; }
+    .header .menu-item-desktop:hover {
+      border-top: solid #fff 3px;
+      padding-top: 10px;
+      opacity: 1;
+      height: 55px; }
+  .header .header-logo {
+    height: 40px;
+    display: flex;
+    align-items: center; }
+    .header .header-logo .app-logo {
+      height: 25px; }
+  .header .bm-burger-button {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: 1rem;
+    top: 20px; }
+  .header .bm-burger-bars {
+    background: #fff;
+    height: 10% !important;
+    border-radius: 10px; }
+  .header .bm-cross-button {
+    height: 50px;
+    width: 50px; }
+  .header .bm-cross {
+    background: #fff; }
+  .header .bm-menu {
+    background: #333;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em; }
+  .header .menu-item {
+    padding: 15px; }
+  .header .bm-morph-shape {
+    fill: #373a47; }
+  .header .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em; }
+  .header .bm-menu-wrap {
+    top: 0; }
+  .header .bm-menu {
+    overflow: hidden !important; }
+  .header .bm-item {
+    display: inline-block; }
+  .header .bm-overlay {
+    background: rgba(0, 0, 0, 0.3); }
 
-.App-header a {
-  text-decoration: none;
-  font-size: 20px;
-  padding: 15px;
-  transition: font-size 0.5s;
-}
-
-
-.App-logo {
-  /* animation: App-logo-spin infinite 20s linear; */
-  height: 100%;
-}
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 30px;
-  height: 25px;
-  right: 20px;
-  top: 20px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #fff;
-  height: 10% !important;
-  border-radius: 10px;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 50px;
-  width: 50px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #fff;
-}
-
-/* General sidebar styles */
-.bm-menu {
-  background: #333;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
-}
-
-.bm-menu-wrap {
-  top: 0;
-}
-.bm-menu {
-  overflow: hidden !important;
-}
-/* Individual item */
-.bm-item {
-  display: inline-block;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
+.background-light .header {
+  background-color: #fff;
+  box-shadow: 0px 0px 3px #ddd; }
+  .background-light .header .menu-item-desktop {
+    color: #333; }
+    .background-light .header .menu-item-desktop:hover {
+      border-top: solid #333 3px; }
+  .background-light .header .img-mobile-connect {
+    width: 22px;
+    height: 22px;
+    margin-bottom: -3px;
+    filter: sepia(0%) saturate(0%) brightness(0%) contrast(0%); }
