@@ -1,7 +1,6 @@
 import { doRequest } from "../../helpers/Request";
 import AppState from "../AppState";
 
-
 export default class Device {
 
   static list() {

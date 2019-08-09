@@ -20,7 +20,7 @@ export default class ButtonIcon extends Component {
         className="button-icon"
       >
         <img
-          className="icon"
+          className={"icon " + (this.props.rotate ? "rotated" :"")}
           src={this.props.icon}
         />
       </div>

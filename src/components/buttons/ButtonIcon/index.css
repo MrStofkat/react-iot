@@ -7,4 +7,7 @@
   align-items: center; }
   .button-icon .icon {
     width: 1.8rem;
-    height: 1.8rem; }
+    height: 1.8rem;
+    transition: all 0.6s ease-in-out; }
+  .button-icon .rotated {
+    transform: rotate(45deg); }

@@ -17,6 +17,7 @@ class PageMain extends AppStateComponent {
       selectedDevices: [],
       isDeleteModalVisible: false,
       isAddingDevice: false,
+      deviceName: "",
     };
 
     Device.list();
@@ -28,6 +29,16 @@ class PageMain extends AppStateComponent {
 
   onAddClicked = () => {
     this.setState({ isAddingDevice: !this.state.isAddingDevice });
+  }
+
+  onAddConfirmClicked = () => {
+    const deviceName = this.state.deviceName;
+    this.setState({
+      isAddingDevice: false,
+      deviceName: ""
+    }, () => {
+      Device.add(deviceName);
+    });
   }
 
   onConfirmedDelete = () => {
@@ -52,13 +63,15 @@ class PageMain extends AppStateComponent {
     return (
       <div className="container-add-device">
         <input
-          className="input-device-name"
           type="text"
+          className="input-device-name"
           placeholder="Enter the device name"
+          value={this.state.deviceName}
+          onChange={(event) => { this.setState({ deviceName: event.target.value }) }}
         />
         <ButtonIcon
           icon={require("../../assets/img/checked.svg")}
-          onClick={this.onDeleteClicked}
+          onClick={this.onAddConfirmClicked}
         />
       </div>
     );
@@ -89,6 +102,7 @@ class PageMain extends AppStateComponent {
               onClick={this.onDeleteClicked}
             />
             <ButtonIcon
+              rotate={this.state.isAddingDevice}
               icon={require("../../assets/img/plus.svg")}
               onClick={this.onAddClicked}
             />

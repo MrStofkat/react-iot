@@ -1,5 +1,5 @@
 # React IoT Web Application
-This repository represents a fully functional IoT/domotica implementation in React. It connects to an ESP8266 micro controller that has a 433mhz sender and receiver module attached to it. With this it directly controls a set of 'dumb' 433mhz wall socket switches, making them 'smart'. It uses an RESTless API considering the limitations of the ESP chip.
+This repository represents a fully functional IoT/domotica implementation in React. It connects to an ESP8266 micro controller that has a 433mhz sender and receiver module attached to it. With this it directly controls a set of 'dumb' 433mhz wall socket switches, making them 'smart'. It uses a RESTless API considering the limitations of the ESP chip.
 
 ## How it works
 The ESP essentially has enough flash memory to store the entire React application on chip, but the React app can also be hosted seperately. The ip-address is for now hardcoded, but it can be found dynamically in a fancy manner with WebRTC (future release) or with a brute force local ip scan. The latter is the easiest to achieve.
