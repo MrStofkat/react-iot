@@ -1,4 +1,6 @@
 .button-default {
+  cursor: pointer;
+  position: relative;
   min-width: 100px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -7,9 +9,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.4s;
   background-color: #355577;
+  &:hover {
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background:rgba(0,0,0,0.2);
+    }
+  }
   .icon {
     width: 2rem;
     height: 2rem;
   }
 }
+

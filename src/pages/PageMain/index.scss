@@ -2,18 +2,23 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  background-color: rgba(0,0,0,0.1);
   .container-add-device {
     display: flex;
     padding: 1rem;
+    flex: 1;
 
     .input-device-name {
-      font-size: 1.5rem;
+      font-size: 16px;
       font-weight: 300;
-      height: 2.5rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      height: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
       flex: 1;
       border-radius: 5px;
+      background-color: #333;
+      color: white;
+      border: none;
     }
   }
   .container-devices {
@@ -30,4 +35,5 @@
       margin-right: -0.5rem;
     }
   }
+
 }

@@ -2,13 +2,6 @@ import { Component } from 'react';
 import AppState from './AppState';
 
 
-class AppStateChild extends Component {
-
-
-  render() {
-    return;
-  }
-}
 class AppStateComponent extends Component {
 
   static listeners = [];
@@ -40,6 +33,10 @@ class AppStateComponent extends Component {
         callback(newState);
       }
     });
+  }
+  // This function will be overridden
+  render() {
+    return null;
   }
 
 }

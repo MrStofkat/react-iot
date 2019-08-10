@@ -19,10 +19,17 @@ export default class ButtonIcon extends Component {
         onClick={this.onClick}
         className="button-icon"
       >
-        <img
-          className={"icon " + (this.props.rotate ? "rotated" :"")}
-          src={this.props.icon}
-        />
+        {this.props.emoji &&
+          <span className={(this.props.rotate ? "rotated" : "")}>
+            {this.props.emoji}
+          </span>
+        }
+        {this.props.icon &&
+          <img
+            className={(this.props.rotate ? "rotated" : "")}
+            src={this.props.icon}
+          />
+        }
       </div>
     );
   }

@@ -70,7 +70,8 @@ class PageMain extends AppStateComponent {
           onChange={(event) => { this.setState({ deviceName: event.target.value }) }}
         />
         <ButtonIcon
-          icon={require("../../assets/img/checked.svg")}
+          // icon={require("../../assets/img/checked.svg")}
+          emoji="👍"
           onClick={this.onAddConfirmClicked}
         />
       </div>
@@ -98,12 +99,14 @@ class PageMain extends AppStateComponent {
           <h2>Devices</h2>
           <div className="container-header-buttons">
             <ButtonIcon
-              icon={require("../../assets/img/delete.svg")}
+              // icon={require("../../assets/img/delete.svg")}
+              emoji="🗑️"
               onClick={this.onDeleteClicked}
             />
             <ButtonIcon
               rotate={this.state.isAddingDevice}
-              icon={require("../../assets/img/plus.svg")}
+              // icon={require("../../assets/img/plus.svg")}
+              emoji="➕"
               onClick={this.onAddClicked}
             />
           </div>
@@ -111,12 +114,11 @@ class PageMain extends AppStateComponent {
         <Collapse isOpened={this.state.isAddingDevice}>
           {this.renderAddDevice()}
         </Collapse>
-
         <div className="container-devices">
           {this.renderDevices()}
         </div>
         <ModalPopup
-          content="Are you sure you want to delete the selected devices?"
+          text="Are you sure you want to delete the selected devices?"
           isConfirmation
           onConfirmed={this.onConfirmedDelete}
           onCanceled={this.onCanceledDelete}

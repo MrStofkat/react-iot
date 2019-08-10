@@ -2,29 +2,40 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  padding-top: 50px;
+  padding-top: 56px;
 }
-
+html {
+  height: 100%;
+}
 html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  font-weight: 200;
-  background-color: #355577;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(#00b09b,#96c93d);
   h2 {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   a {
     color: #fff;
   }
-  span {
-    font-size: 1.5rem;
+  span, p {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  #root {
+    position: relative;
+    max-width: 100vw;
   }
   .outer-wrapper {
-    background-color: #355577;
+    // background-color: #355577;
+    width: 100%;
     max-width: 800px;
     margin: auto;
   }
+
 }
+
